@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" type="text/css" href="personalização.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Admin - Cadastro</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="admin.html">Admin</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="login">
+        <form Name='form-login'>
+          <h1>CADASTRO</h1>
+          <label for="Name">Username</label></br>
+          <input type="Name" id="Name" placeholder="Name" required><br>
+          <label for="Email">Email</label>
+          <input type="Email" id= "Email" placeholder="Email" required>
+
+          <ul class="helper-text">
+            <li class="length">Username Deve conter até 8 caracteres.</li>
+            <li class="lowercase">Username Deve conter ao menos uma letra minuscula.</li>
+            <li class="uppercase">Username Deve conter ao menos uma letra maiuscula.</li>
+          </ul>
+          <input id="rgstr_btn" type="submit" value="Cadastrar" onclick="store()"><br>
+          <button type="button" onclick="clearFields()">Limpar Campos</button>
+        </form>
+      </div>
+
+      <div class="login">
+        <form name="form-login">
+      <h2>Lista de Usuários cadastrados</h2>
+      <input type="text" id="searchInput" placeholder="Pesquisar por nome ou e-mail" oninput="searchUser()">
+      <ul id="userList">
+
+      </ul>
+
+      <button onclick="deleteAll()">Excluir Todos</button>
+      </form>
+    </main>
+
+  </body>
+  <script src="script.js"></script>
+</html>
