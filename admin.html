@@ -22,30 +22,26 @@
       <div class="login">
         <form Name='form-login'>
           <h1>CADASTRO</h1>
-          <label for="Name">Username</label></br>
-          <input type="Name" id="Name" placeholder="Name" required><br>
-          <label for="Email">Email</label>
-          <input type="Email" id= "Email" placeholder="Email" required>
-
-          <ul class="helper-text">
-            <li class="lowercase">Username Deve conter ao menos uma letra minuscula.</li>
-            <li class="uppercase">Username Deve conter ao menos uma letra maiuscula.</li>
-          </ul>
-          <input id="rgstr_btn" type="submit" value="Cadastrar" onclick="store()"><br>
-          <button type="button" onclick="clearFields()">Limpar Campos</button>
+          <form id="loginForm">
+            <label for="Name">Username</label></br>
+            <input type="Name" id="Name" placeholder="Name" required><br>
+            <label for="Email">Email</label>
+            <input type="Email" id= "Email" placeholder="Email" required>
+  
+            <ul class="helper-text">
+              <li class="lowercase">Username Deve conter ao menos uma letra minuscula.</li>
+              <li class="uppercase">Username Deve conter ao menos uma letra maiuscula.</li>
+            </ul>
+            <input id="rgstr_btn" type="submit" value="Cadastrar" onclick="store()"><br>
+            <button type="button" onclick="clearFields()">Limpar Campos</button>            
+          </form>
         </form>
       </div>
 
-      <div class="login">
-        <form name="form-login">
-      <h2>Lista de Usuários cadastrados</h2>
-      <input type="text" id="searchInput" placeholder="Pesquisar por nome ou e-mail" oninput="searchUser()">
-      <ul id="userList">
-
-      </ul>
-
       <button onclick="deleteAll()">Excluir Todos</button>
-      </form>
+      
+      <h2>Lista de cadastrados</h2>
+      <ul id="cadastroLista"></ul>
     </main>
 
   </body>
