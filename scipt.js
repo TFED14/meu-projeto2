@@ -7,8 +7,6 @@ function store(){
 
   if(Name.value.length == 0){
     alert('Informe um email');
-  }else if(Name.value.length > 8){
-    alert('Máximo de 8 caracteres');
   }else if(!Name.value.match(upperCaseLetters)){
     alert('Deve conter uma letra maiuscula');
   }else if(!Name.value.match(lowerCaseLetters)){
